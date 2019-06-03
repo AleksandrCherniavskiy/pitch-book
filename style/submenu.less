@@ -1,0 +1,36 @@
+@myriad-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@grey: #646464;
+
+.submenu {
+  //display: none;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  font: 400 14px @myriad-family;
+  height: 188px;
+
+
+  .preview-block {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    padding: 0 40px 0 75px;
+    height: 100%;
+
+    .preview-page__title {
+      font: inherit;
+      color: @grey;
+      padding: 23px 0 12px;
+    }
+  }
+
+  .links-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 25px;
+    color: @grey;
+    width: 600px;
+    height: inherit;
+  }
+}
