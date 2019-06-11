@@ -1,40 +1,37 @@
-@open-sans: 600 14px 'Open Sans', sand-serif;
-@orange: #ff9b51;
-
 .navbar {
   background: #37495e;
-  //position: absolute;
+  position: absolute;
+  width: 100%;
 
-  .container {
-    width: 1110px;
-    height: 60px;
-    margin: 0 auto;
+  //.container {
+  //  padding: 0 45px;
+  //}
 
-    .flex-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .logo {
+  .logo {
+    display: block;
+    max-width: 190px;
+  }
+
+  .main-menu {
+    .flex-container();
+
+    a {
       display: block;
-      max-width: 190px;
-    }
+      font: 600 14px @open-sans-family;
+      line-height: 60px;
+      color: #fff;
+      padding: 0 30px;
 
-    .main-menu {
-      .flex-container();
-
-      a {
-        display: block;
-        font: @open-sans;
-        line-height: 60px;
-        color: #fff;
-        padding: 0 30px;
-
-        &:hover {
-          background: @orange;
-        }
+      &:hover {
+        background: @orange;
       }
     }
   }
+
 }
