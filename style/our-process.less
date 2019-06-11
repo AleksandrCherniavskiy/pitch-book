@@ -1,0 +1,39 @@
+.describe-item {
+  padding: 80px 0 100px;
+  text-align: center;
+
+  .describe-item__img {
+    display: inline-flex;
+    position: relative;
+  }
+
+  .describe-item__img_absolute {
+    position: absolute;
+    top: 22px;
+    left: 27px;
+  }
+
+  &:nth-of-type(2n) {
+    .describe-item__img_absolute {
+      top: 25px;
+      left: 18px;
+    }
+  }
+
+  .describe-item__title {
+    font: 700 20px @open-sans-family;
+    line-height: 24px;
+    padding: 20px 0 15px;
+  }
+
+  .describe-item__texp {
+    .text-grey();
+    width: 360px;
+  }
+
+
+
+
+
+
+}
