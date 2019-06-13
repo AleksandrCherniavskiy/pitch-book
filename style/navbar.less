@@ -4,7 +4,7 @@
   width: 100%;
 
   //.container {
-  //  padding: 0 45px;
+  //  position: relative;
   //}
 
   .flex-container {
@@ -14,14 +14,20 @@
   }
 
   .logo {
-    display: block;
-    max-width: 190px;
+
+    .logo__title {
+      font-size: 0px;
+    }
+    .logo__img {
+      max-width: 190px;
+    }
+
   }
 
   .main-menu {
     .flex-container();
 
-    a {
+    &__item {
       display: block;
       font: 600 14px @open-sans-family;
       line-height: 60px;
@@ -32,6 +38,12 @@
         background: @orange;
       }
     }
+  }
+
+
+
+  .main-menu:hover .submenu {
+    display: flex;
   }
 
 }
