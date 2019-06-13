@@ -6,67 +6,74 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:300,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet/less" type="text/css" href="./style/main.less" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body>
   <div class="navbar">
     <div class="container">
       <div class="flex-container">
-        <img class="logo" src="./img/logo.png" alt="Logo">
+        <div class="logo">
+          <h1 class="logo__title">Pith Book</h1>
+          <a href="#"><img class="logo__img"  src="./img/logo.png" alt="Pitch Book"></a>
+        </div>
+
         <nav>
           <ul class="main-menu">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a class="main-menu__item" href="#">Features</a></li>
+            <li><a class="main-menu__item" href="#">About</a></li>
+            <li><a class="main-menu__item" href="#">Pricing</a></li>
+            <li><a class="main-menu__item" href="#">Reviews</a></li>
+            <li><a class="main-menu__item" href="#">Contacts</a></li>
+            <li>
+              <div class="submenu">
+                <div class="preview-block">
+                  <div class="preview-page">
+                    <h3 class="preview-page__title">About us</h3>
+                    <img class="preview-page__img" src="./img/menu_image.png">
+                  </div>
+                  <div class="preview-page">
+                    <h3 class="preview-page__title">Our partners</h3>
+                    <img class="preview-page__img" src="./img/menu_image.png">
+                  </div>
+                  <div class="preview-page">
+                    <h3 class="preview-page__title">Careers</h3>
+                    <img class="preview-page__img" src="./img/menu_image.png">
+                  </div>
+                  <div class="preview-page">
+                    <h3 class="preview-page__title">Contact us</h3>
+                    <img class="preview-page__img" src="./img/menu_image.png">
+                  </div>
+                </div>
+                <div class="links-block">
+                  <ul class="link-list">
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">API and Datafeed</a></li>
+                    <li><a href="#">Platform</a></li>
+                    <li><a href="#">Mobile</a></li>
+                  </ul>
+                  <ul class="link-list">
+                    <li><a href="#">News & Analysis</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Subscribe to N&A</a></li>
+                  </ul>
+                  <ul class="link-list">
+                    <li><a href="#">News & Analysis</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Subscribe to N&A</a></li>
+                  </ul>
+                  <ul class="link-list">
+                    <li><a href="#">News & Analysis</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Subscribe to N&A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
           </ul>
         </nav>
-      </div>
-    </div>
-    <div class="submenu">
-      <div class="preview-block">
-        <div class="preview-page">
-          <h3 class="preview-page__title">About us</h3>
-          <img class="preview-page__img" src="./img/menu_image.png">
-        </div>
-        <div class="preview-page">
-          <h3 class="preview-page__title">Our partners</h3>
-          <img class="preview-page__img" src="./img/menu_image.png">
-        </div>
-        <div class="preview-page">
-          <h3 class="preview-page__title">Careers</h3>
-          <img class="preview-page__img" src="./img/menu_image.png">
-        </div>
-        <div class="preview-page">
-          <h3 class="preview-page__title">Contact us</h3>
-          <img class="preview-page__img" src="./img/menu_image.png">
-        </div>
-      </div>
-      <div class="links-block">
-        <ul class="link-list">
-          <li><a href="#"></a>Product</li>
-          <li><a href="#"></a>API and Datafeed</li>
-          <li><a href="#"></a>Platform</li>
-          <li><a href="#"></a>Mobile</li>
-        </ul>
-        <ul class="link-list">
-          <li><a href="#"></a>News & Analysis</li>
-          <li><a href="#"></a>Reports</li>
-          <li><a href="#"></a>Videos</li>
-          <li><a href="#"></a>Subscribe to N&A</li>
-        </ul>
-        <ul class="link-list">
-          <li><a href="#"></a>News & Analysis</li>
-          <li><a href="#"></a>Reports</li>
-          <li><a href="#"></a>Videos</li>
-          <li><a href="#"></a>Subscribe to N&A</li>
-        </ul>
-        <ul class="link-list">
-          <li><a href="#"></a>News & Analysis</li>
-          <li><a href="#"></a>Reports</li>
-          <li><a href="#"></a>Videos</li>
-          <li><a href="#"></a>Subscribe to N&A</li>
-        </ul>
       </div>
     </div>
   </div>
@@ -101,13 +108,13 @@
           Aenean euismod bibendum laoreet.</p>
       </div>
       <div class="flex-container">
-        <a class="brand-bar__icon brand-bar__icon_fb" href="#"></a>
-        <a class="brand-bar__icon brand-bar__icon_tw" href="#"></a>
-        <a class="brand-bar__icon brand-bar__icon_g-plus" href="#"></a>
-        <a class="brand-bar__icon brand-bar__icon_pic" href="#"></a>
-        <a class="brand-bar__icon brand-bar__icon_insta" href="#"></a>
-        <a class="brand-bar__icon brand-bar__icon_lam" href="#"></a>
-        <a class="brand-bar__icon brand-bar__icon_rss" href="#"></a>
+        <a class="icon icon_fb" href="#"></a>
+        <a class="icon icon_tw" href="#"></a>
+        <a class="icon icon_g-plus" href="#"></a>
+        <a class="icon icon_pic" href="#"></a>
+        <a class="icon icon_insta" href="#"></a>
+        <a class="icon icon_lam" href="#"></a>
+        <a class="icon icon_rss" href="#"></a>
       </div>
     </div>
   </div>
@@ -295,9 +302,11 @@
       <div class="flex-container">
         <div class="testimonial-item">
           <div class="relative">
-            <img class="testimonial-item__arrow_left" src="./img/left_arrow.png" alt="back">
-            <p class="testimonial-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus
-              expedita repellat similique odio aspernatur ex, architecto eaque  quo suscipit.
+            <button class="btn_arrow btn_arrow-left">
+              <img class="arrow arrow_left" src="./img/left_arrow.png" alt="back">
+            </button>
+            <p class="testimonial-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque  quo suscipit.
             </p>
           </div>
           <div class="testimonial-item-author flex-container">
@@ -322,7 +331,9 @@
         </div>
         <div class="testimonial-item">
           <div class="relative">
-            <img class="testimonial-item__arrow_right" src="./img/right_arrow.png" alt="next">
+            <button class="btn_arrow btn_arrow-right">
+              <img  src="./img/right_arrow.png" alt="next">
+            </button>
             <p class="testimonial-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus
               expedita repellat similique odio aspernatur ex, architecto eaque  quo suscipit.
             </p>
