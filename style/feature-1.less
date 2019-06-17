@@ -2,6 +2,14 @@
   padding: 140px 0 114px;
   background: #f5f5f5;
 
+  .flex-container {
+    @media @phone-down { justify-content: left }
+  }
+
+  .tabs-block {
+    @media @phone-down { margin: 0 10px; }
+  }
+
   .feature-1__button_tab {
     width: 112px;
     height: 112px;
@@ -36,12 +44,12 @@
     font: 400 14px @open-sans-family;
     color: #86878b;
     padding-bottom: 25px;
+    @media @phone-down { width: 80% }
   }
 
   .feature-1__img {
     width: 320px;
     height: 253px;
-
     @media @phone-down { display: none }
   }
 }
