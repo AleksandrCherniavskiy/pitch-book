@@ -8,6 +8,31 @@
 
 @phone-down: ~'(max-width: 576px)';
 
+@supports (-ms-ime-align:auto) {
+  .section__hr, .hr-orange {
+    text-align: left;
+  }
+  .header-form__legend {
+    width: 100%;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .section__hr, .hr-orange {
+    text-align: left;
+  }
+
+  .header-form__legend {
+    width: 100%;
+  }
+
+  .form__textarea {
+    overflow: hidden;
+  }
+
+}
+
+
 .container {
   width: 1110px;
   margin: 0 auto;
