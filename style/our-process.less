@@ -1,6 +1,21 @@
+.our-process {
+  .flex-container {
+    @media @phone-down {
+      flex-direction: column;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+}
+
 .describe-item {
   padding: 80px 0 100px;
   text-align: center;
+  @media @phone-down {
+    padding: 0;
+    margin-top: 20px
+  }
 
   .describe-item__img {
     display: inline-flex;
@@ -30,10 +45,5 @@
     .text-grey();
     width: 360px;
   }
-
-
-
-
-
 
 }
