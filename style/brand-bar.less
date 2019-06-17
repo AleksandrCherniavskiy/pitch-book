@@ -1,11 +1,21 @@
 .brand-bar {
-  //TODO: Add shadow
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.38);
+  @media @phone-down { padding-bottom: 20px }
+
+  & > .flex-container {
+    @media @phone-down {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
 
   .brand-bar__title {
     font: 700 20px @open-sans-family;
     color: #333333;
     padding: 18px 0 4px;
+    @media @phone-down {
+      text-align: center;
+    }
   }
 
   .brand-bar__text {
@@ -14,6 +24,10 @@
     line-height: 20px;
     color: #86878b;
     padding-bottom: 20px;
+    @media @phone-down {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .icon {
@@ -23,11 +37,12 @@
     width: 50px;
     display: block;
     margin: 0 24px 0;
+    @media @phone-down { margin: 0 0.15em 0; }
 
   }
 
   .icon_fb {
-    background-position: 10px top;
+    background-position: 20px top;
   }
 
   .icon_tw {
