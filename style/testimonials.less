@@ -7,10 +7,12 @@
 
     &-left {
       left: -45px;
+      @media @phone-down { left: 20px }
     }
 
     &-right {
       right: -45px;
+      @media @phone-down { right: 20px }
     }
 
     &:hover {
@@ -26,6 +28,11 @@
   overflow: hidden;
   margin: 55px 25px 100px;
   font-size: 0;
+  @media @phone-down {
+    width: 273px;
+    height: 239px;
+    margin: 20px auto;
+  }
 }
 
 .carousel-item {
