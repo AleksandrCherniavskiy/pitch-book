@@ -2,6 +2,14 @@
   background: #f5f5f5;
   padding: 89px 0 131px;
 
+  .flex-container {
+    @media @phone-down { flex-direction: column }
+  }
+
+  .text-block {
+    @media @phone-down { width: 90% }
+  }
+
   .block__title {
     text-transform: capitalize;
   }
@@ -13,6 +21,7 @@
   .text-grey {
     padding-bottom: 20px;
     width: 490px;
+    @media @phone-down { width: 100% }
   }
 
   .features__img {
